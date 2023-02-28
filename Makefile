@@ -27,3 +27,4 @@ gen:
 clean:
 	@rm -v ${OBJ_DIR}/*.o
 	@rm -v ${BINARY}
+	@rm -v ./compile_commands.json
