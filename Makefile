@@ -3,12 +3,11 @@ PROJECT = sandbox
 CC = clang++
 SRC_DIR =./src
 SRC = $(wildcard ${SRC_DIR}/*.cpp)
-INC = ${SRC_DIR}/includes
 OUT_DIR = bin
 OBJ = ${SRC:.cpp=.o}
 OBJ_DIR = ${OUT_DIR}/objects
 LIBS = 
-CFLAGS = -Wextra -Werror -Wall -std=c++20 -Wc++20-extensions -I ${INC}
+CFLAGS = -Wextra -Werror -Wall -std=c++20 -Wc++20-extensions
 BINARY = ${OUT_DIR}/${PROJECT}
 
 main: ${OBJ}
@@ -21,7 +20,7 @@ main: ${OBJ}
 run:
 	@${BINARY}
 
-gen:
+build:
 	@bear -- make
 
 clean:
