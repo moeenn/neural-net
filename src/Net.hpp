@@ -2,10 +2,14 @@
 #include <iostream>
 #include <vector>
 #include "Layer.hpp"
+#include <cassert>
 
 class Net {
 private:
   std::vector<Layer> m_layers;
+  double m_error;
+  double m_recent_avg_error;
+  double m_recent_avg_smoothing_factor;
 
 public:
   Net(const std::vector<uint> &topology);
