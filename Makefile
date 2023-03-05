@@ -24,6 +24,6 @@ build:
 	@bear -- make
 
 clean:
+	@rm -v ./compile_commands.json
 	@rm -v ${OBJ_DIR}/*.o
 	@rm -v ${BINARY}
-	@rm -v ./compile_commands.json
