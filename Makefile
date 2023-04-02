@@ -1,4 +1,4 @@
-PROJECT = sandbox
+PROJECT = neuron-net
 
 CC = clang++
 SRC_DIR =./src

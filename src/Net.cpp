@@ -98,6 +98,11 @@ void Net::back_propagate(const std::vector<double> &target_vals) {
   }
 }
 
-//  void Net::get_results(std::vector<double> &result_vals) const {
+void Net::get_results(std::vector<double> &result_vals) const {
+  result_vals.clear();
 
-//  }
+  for (uint n = 0; n < m_layers.back().size() - 1; n++) {
+    double output_val = (m_layers.back()[n]).get_output_val(); 
+    result_vals.push_back(output_val);
+  }
+}

@@ -8,7 +8,7 @@ Connection::Connection() {
 }
 
 double Connection::get_weight() const { return m_weight; }
-void Connection::set_delta_weight(double delta) { m_delta_weight = delta; }
+void Connection::set_weight(double weight) { m_weight = weight; }
 
 double Connection::get_delta_weight() const { return m_delta_weight; }
-void Connection::set_weight(double weight) { m_weight = weight; }
+void Connection::set_delta_weight(double delta) { m_delta_weight = delta; }
